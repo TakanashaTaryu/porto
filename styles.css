@@ -1,0 +1,247 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo a{
+    display: block;
+    overflow: hidden;
+}
+
+.logo img {
+    margin-right: 520px; /* This will move the logo to the far right */
+    height: 40px;
+    width: auto;
+    rotate:340deg;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover img {
+    transform: scale(1.1);
+    rotate: 20deg;
+}
+
+
+ul {
+    list-style: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Adds space between navigation items */
+}
+
+ul li {
+    margin-right: 20px; /* Adds space between each nav item */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+.contact-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 400px;
+}
+
+.contact-btn:hover {
+    background-color: #ddd;
+}
+
+.hero, #about {
+    height: 100vh;
+    background: url('contoh.png') no-repeat;
+    background-size: auto 200vh; /* This ensures the image spans across both sections */
+}
+
+.hero-content {
+    z-index: 1;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 5rem; /* Adjust based on your preference */
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* Creates the white outline */
+}
+
+.hero-content h1 span {
+    display: block;
+    font-size: 5.5rem; /* Adjust based on your preference */
+    color: white;
+    -webkit-text-stroke: 0;
+}
+
+.hero h1 {
+    font-size: 6em;
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 span {
+    display: inline-block;
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    mix-blend-mode: difference; /* This creates the outline effect */
+    -webkit-text-fill-color: white; /* Ensures text is white when no image behind */
+    padding: 0.2em 0.5em; /* Adjust as needed */
+}
+
+.hero {
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.21); /* Optional: Dark overlay to help the text stand out more */
+    z-index: 1;
+}
+
+.hero-content{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero h1.no-bg {
+    color: white;
+    -webkit-text-stroke: 0px;
+    text-stroke: 0px;
+}
+
+.hero h1:has(img){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.scroll-btn {
+    margin-top: 20px;
+    padding: 15px 35px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.scroll-btn:hover {
+    background: white;
+    color: black;
+}
+
+#about {
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*SECTION 2*/
+
+.about {
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.about h1 span{
+    display: inline-block;
+    background: none;
+    color: transparent;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.21); /* Optional: Dark overlay to help the text stand out more */
+    z-index: 1;
+}
+
+.hero-content{
+    z-index: 2;
+    padding: relative;
+    text-align: center;
+    color: white;
+
+}
