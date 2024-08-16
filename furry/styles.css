@@ -89,7 +89,7 @@ header nav ul li a:hover {
     background-color: #ddd;
 }
 
-.hero, #continuation {
+.hero, #about {
     height: 100vh;
     background: url('contoh.png') no-repeat;
     background-size: auto 200vh; /* This ensures the image spans across both sections */
@@ -111,9 +111,9 @@ header nav ul li a:hover {
 
 .hero-content h1 span {
     display: block;
-    font-size: 11rem; /* Adjust based on your preference */
+    font-size: 11rem; /*Ukuran takanasha taryu */
     color: white;
-    -webkit-text-stroke: 0;
+    -webkit-text-stroke:0;
 }
 
 .hero h1 {
@@ -198,9 +198,161 @@ header nav ul li a:hover {
     color: black;
 }
 
-#continuation {
+#about {
     background-position: center bottom;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/*SECTION 2*/
+
+#about-me {
+    padding: 60px 0;
+    background-color: #1b1b1b;
+}
+
+#about-me p {
+    margin-left: 87px;
+    font-size: 15px;
+    color: #FEA900;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 90%;
+    margin: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.left-section {
+    max-width: 40%;
+    position: relative;
+    display: inline-block;
+}
+
+.cover {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 1);
+    z-index: 1; 
+    border-radius: 0 0 0 15px;
+
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.depan {
+    position: absolute; 
+    bottom: 0%;
+    left: 0;
+    width: 215%;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3; 
+    border-radius: 0 15px 15px 15px;
+}
+
+.right-section {
+    max-width: 40%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.right-section h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #FEA900;
+    font-weight: lighter;
+}
+
+.right-section h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.right-section h4 {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+.profile-image {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    color: white;
+    margin-top: 20px;
+}
+
+.info-list li{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.info-list li strong {
+    font-weight: bold;
+    color: white;
+}
+
+.info-list div li {
+    color: #aaaaaa;
+}
+
+.right-section h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    color: white;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FEA900;
+}
+
+.stat-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
