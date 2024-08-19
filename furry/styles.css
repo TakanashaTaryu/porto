@@ -7,100 +7,148 @@ body, html {
     background-color: rgb(15, 15, 15);
 }
 
-
-
 header {
-    position: fixed;
+    display: block;
     width: 100%;
     top: 0;
+    right: 0;
     left: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 0 5px 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    display: inline-block;
-}
-
-.logo a{
-    display: block;
-    overflow: hidden;
-}
-
-.logo img {
-    margin-right: 520px; /* This will move the logo to the far right */
-    height: 40px;
-    width: auto;
-    rotate:340deg;
-    transition: transform 0.3s ease;
-}
-
-.logo a:hover img {
-    transform: scale(1.1);
-    rotate: 20deg;
-}
-
-
-ul {
-    list-style: none; /* Removes default bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px; /* Adds space between navigation items */
-}
-
-ul li {
-    margin-right: 20px; /* Adds space between each nav item */
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-}
-
-header nav ul li a:hover {
-    color: #ddd;
-}
-
-.contact-btn {
+nav .contact-btn {
     background-color: white;
     color: black;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s;
-    margin-left: 400px;
+    text-align: center;
 }
 
-.contact-btn:hover {
-    background-color: #ddd;
+nav {
+    display: flex;
+    flex-direction: row;
 }
 
-.hero, #about {
+nav img {
+    max-width: 64px;
+    max-height: 48px;
+    width:auto;
+    rotate: 340deg;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover img {
+    transform: scale(1.1);
+    rotate: 20deg;
+}
+
+.navcenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navcontact {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: auto;
+    gap: 20px; /* Adds space between navigation items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Adds space between each nav item */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* page content */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    display: block;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    float:left;
+    width:50%;
+    min-height: 1px;
+}
+
+.content-padding {
+    padding: 20px 30px;
+}
+
+.content-margin {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.col-full {
+    max-width: 100%;
+    min-height: 1px;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header-section {
+    font-size: 15px;
+    color: #FEA900;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 30%
+}
+
+/* Cover */
+cover {
     height: 100vh;
-    background: url('contoh.png') no-repeat;
-    background-size: auto 200vh; /* This ensures the image spans across both sections */
+    background: url('./contoh.png') no-repeat;
+    background-size: auto 200vh;
 }
 
-.hero-content {
+cover .content {
     z-index: 1;
     position: relative;
 }
 
-.hero-content h1 {
+cover .content h1 {
     font-size: 5rem; /* Adjust based on your preference */
     font-weight: 700;
     text-align: center;
@@ -109,35 +157,14 @@ header nav ul li a:hover {
     -webkit-text-stroke: 2px white; /* Creates the white outline */
 }
 
-.hero-content h1 span {
+cover .content h1 span {
     display: block;
     font-size: 11rem; /*Ukuran takanasha taryu */
     color: white;
     -webkit-text-stroke:0;
 }
 
-.hero h1 {
-    font-size: 6em;
-    margin: 0;
-    font-weight: bold;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-}
-
-.hero h1 span {
-    display: inline-block;
-    background: none;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    mix-blend-mode: difference; /* This creates the outline effect */
-    -webkit-text-fill-color: white; /* Ensures text is white when no image behind */
-    padding: 0.2em 0.5em; /* Adjust as needed */
-}
-
-.hero {
+cover {
     background-position: center top;
     display: flex;
     justify-content: center;
@@ -145,10 +172,28 @@ header nav ul li a:hover {
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Ensure it covers the full viewport height */
+    height: 100vh; /
 }
 
-.hero::before {
+@media (max-width: 1024px){
+    cover .content h1 {
+        font-size: 3rem; /* Adjust based on your preference */
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke: 2px white; /* Creates the white outline */
+    }
+    
+    cover .content h1 span {
+        display: block;
+        font-size: 7rem; /*Ukuran takanasha taryu */
+        color: white;
+        -webkit-text-stroke:0;
+    }
+}
+
+cover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -161,28 +206,7 @@ header nav ul li a:hover {
     z-index: 1;
 }
 
-.hero-content{
-    z-index: 2;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero h1.no-bg {
-    color: white;
-    -webkit-text-stroke: 0px;
-    text-stroke: 0px;
-}
-
-.hero h1:has(img){
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    text-stroke: 2px white;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.scroll-btn {
+cover .fading-btn {
     margin-top: 20px;
     padding: 15px 35px;
     color: white;
@@ -193,24 +217,14 @@ header nav ul li a:hover {
     transition: all 0.3s;
 }
 
-.scroll-btn:hover {
+cover .fading-btn:hover {
     background: white;
     color: black;
 }
 
-#about {
-    background-position: center bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*SECTION 2*/
-
+/* About Me */
 #about-me {
     padding: 60px 0;
-    background-color: #1b1b1b;
 }
 
 #about-me p {
@@ -219,7 +233,7 @@ header nav ul li a:hover {
     color: #FEA900;
 }
 
-hr {
+#about-me hr {
     border: none;
     height: 2px;
     background-color: white;
@@ -227,7 +241,7 @@ hr {
     margin: none;
 }
 
-.container {
+.about-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +267,7 @@ hr {
 
 }
 
-img {
+#about-me img {
     display: block;
     width: 80%;
     height: auto;
@@ -356,3 +370,143 @@ img {
     font-size: 1.2rem;
 }
 
+/* Social */
+.social {
+    padding: 2px;
+}
+
+.social .phone {
+    font-size: 24px;
+    color: #7baaff;
+    text-decoration: none;
+}
+
+.social .dark {
+    color:rgb(150, 150, 150);
+}
+
+.social-icon-div {
+    display: block;
+}
+
+.social-icons img {
+    max-width: 32px;
+    margin-top: 10px;
+    margin-right: 14px;
+}
+
+.contact {
+    padding-right: 20px;
+}
+
+.contact .half {
+    float: left;
+    width: 48%;
+}
+
+.contact .half-right {
+    float: right;
+    width: 48%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .input-row {
+    display: block;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact .textarea-tall {
+    height: 120px;
+}
+
+.contact .button {
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Experience */
+
+.sec-experience {
+    width: 70%;
+    background-color: #4c4c4c;
+    padding: 5% 8%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.sec-experience .timeline {
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.sec-experience .timeline .item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.sec-experience .timeline .item h3 {
+    margin: 0;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+.sec-experience .timeline .item p {
+    margin: 5px 0 0;
+    color: #d1d0d0;
+}
+
+
+.sec-experience .timeline .item .date {
+    flex: 6;
+}
+
+.sec-experience .timeline .item .icon {
+    flex: 1;
+}
+
+.sec-experience .timeline .item .content {
+    float: right;
+    width: 60%;
+    padding-left: 30px;
+    border-left: 2px dashed #fefefe;
+}
+
+.sec-experience .timeline .item .content h3 {
+    margin: 0;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+.sec-experience .timeline .item .content p {
+    margin: 5px 0 0;
+    color: #d1d0d0;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+   /* background-color: #2a2a2a; */
+    color: #aaa;
+    text-align: center;
+}

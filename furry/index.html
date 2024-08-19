@@ -1,90 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="logo.png" alt="Logo">
+            <div class="navimg navcenter">
+                <a href="#">
+                    <img src="../logo.png">
                 </a>
             </div>
-            <ul>
-                <li><a href="#about-me">ABOUT</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-
-                <li><a href="#works">WORKS</a></li>
-                
-            </ul>
-            <a href="#contact" class="contact-btn">CONTACT ME</a>
+            <div class="navmenu navcenter">
+                <ul>
+                    <li><a href="#about-me">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                </ul>
+            </div>
+            <div class="navcontact navcenter">
+                <a href="#contact-me" class="contact-btn">CONTACT ME</a>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome, I'm <br> <span>Takanasha Taryu</span></h1>
-            <br><br>
-            <a href="#about-me" class="scroll-btn">See More</a>
+    <!--
+    <div class="container">
+        
+        <div class="row content-padding">
+             <div class="col-full ">
+                <p class="header-section">SECTION NAME</p>
+                <hr>
+            </div>
+
+            <div class="col text-center">
+                <p>Content AAAA</p>
+                <p>Content</p>
+            </div>
+            <div class="col text-center">
+                <p>Content BBBB</p>
+                <p>Content</p>
+            </div>
         </div>
-    </section>
+        
+    </div>
+    -->
+
+    <!-- Cover Page -->
+    <cover>
+        <div class="content">
+            <h1>Welcome, I'm <br> <span>Mohammad Fiqri Firmansyah</span></h1>
+            <br><br>
+            <a href="#about-me" class="fading-btn">Learn More</a>
+        </div>
+    </cover>
     
 
-    <section id="about-me">
-        <p>ABOUT ME</p>
-        <hr>
-        <div class="container">
-          <div class="left-section">
-            <div class="cover"></div>
-            <div class="depan"></div>
-            <img src="contoh.png" alt="Profile Picture" class="profile-image">
-          </div>
-          <div class="right-section">
-            <h2>About Me</h2>
-            <h3>Undergraduate of Biomedical Engineering in  Telkom University</h3>
-            <h4>Make people smile in my own way in any time</h4>
-            <ul class="info-list">
-            <div>
-                <div>
-                    <li><strong>Name</strong>
-                    <li>Takanasha Taryu
-                </div>
-                <div>
-                    <li><strong>Address</strong>
-                    <li>Bojongsoang, Bandung, Indonesia
-                </div>
-            </div>
-            <div>
-                <div>
-                    <li><strong>Phone</strong>
-                    <li>+6282192986904
-                </div>
-                <div>
-                    <li><strong>Email</strong>
-                    <li>tatsuarieyu@gmail.com
-                </div>
+    <!-- Form About Me -->
+    <div class="container" id="about-me">
+        
+        <div class="row content-padding">
+            <div class="col-full ">
+                <p class="header-section">ABOUT ME</p>
+                <hr>
             </div>
 
-            </ul>
-            <div class="stats">
-              <div class="stat-item">
-                <span class="stat-number">02+</span>
-                <span class="stat-description">Years of Experience</span>
-              </div>
-            <div class="stat-item">
-                <span class="stat-number">05</span>
-                <span class="stat-description">Projects Completed</span>
-              </div>
+            <div id="about-me">
+                <div class="about-container">
+
+                    <div class="left-section">
+                      <div class="cover"></div>
+                      <div class="depan"></div>
+                      <img src="contoh.png" alt="Profile Picture" class="profile-image">
+                    </div>
+
+                    <div class="right-section">
+                      <h2>About Me</h2>
+                      <h3>Undergraduate of Biomedical Engineering in  Telkom University</h3>
+                      <h4>Make people smile in my own way in any time</h4>
+                      <ul class="info-list">
+                      
+                            <div>
+                                <div>
+                                    <li><strong>Name</strong>
+                                    <li>Mohammad Fiqri Firmansyah
+                                </div>
+                                <div>
+                                    <li><strong>Address</strong>
+                                    <li>Bojongsoang, Bandung, Indonesia
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div>
+                                    <li><strong>Phone</strong>
+                                    <li>+6282192986904
+                                </div>
+                                <div>
+                                    <li><strong>Email</strong>
+                                    <li>tatsuarieyu@gmail.com
+                                </div>
+                            </div>
+          
+                      </ul>
+
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">02+</span>
+                                <span class="stat-description">Years of Experience</span>
+                            </div>
+                    
+                            <div class="stat-item">
+                                <span class="stat-number">05</span>
+                                <span class="stat-description">Projects Completed</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </section>      
+        
+    </div>
 
 
-    <script src="script.js"></script>
+    <!-- Form Experience -->
+    <div class="container" id="experience">
+
+        <div class="row content-padding">
+
+            <div class="col-full ">
+                <p class="header-section">EXPERIENCE</p>
+                <hr>
+            </div>
+
+            <div class="content-margin">
+                <div class="col-full sec-experience">
+                    <h1>My Work Experience</h1>
+                    <div class="timeline">
+                        <div class="item">
+                            <div class="date">
+                                <h3>Assistant of Dasar Komputer Laboratory, Telkom University</h3>
+                                <p>June 2024 - Now</p>
+                            </div>
+                            <div class="icon">
+                            </div>
+                            <div class="content">
+                                <h3>Human Resource Development</h3>
+                                <p>A event planner of Daskom Laboratory, monitoring and assessing the performance of Daskom Laboratory members outside the practicum </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="date">
+                                <h3>Local Community</h3>
+                                <p>March 2023 - Now</p>
+                            </div>
+                            <div class="icon">
+                            </div>
+                            <div class="content">
+                                <h3>Event Organizer, Planner, and Accommodation</h3>
+                                <p>An Event Organizer for 3 major event of local furry community witch is "Indonesian Weekend Anthro Gathering (IWAG)", "Indonesian Content Creators Furry (INCOFUR)", "Furs Bandung Community (FURBAN)"</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="date">
+                                <h3>Designer and Tailor for furry cosplay</h3>
+                                <p>September 2022 - Now</p>
+                            </div>
+                            <div class="icon">
+                            </div>
+                            <div class="content">
+                                <h3>Character Designer and Tailor</h3>
+                                <p>Openning Commission for any kind of art and costume related to furry/mascot </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Form Contact -->
+    <div class="container">
+        <div class="row content-padding">
+
+            <div class="col-full">
+                <p class="header-section">CONTACT</p>
+                <hr>
+            </div>
+
+            <!-- left -->
+            <div class="col">
+                <div class="social">
+                    <h3 class="dark">Get in touch</h3>
+                    <h2 style="font-size:40px">LET'S MAKE YOUR<br>BRAND BRILLIANT!</h2>
+                    <p class="dark">If you would like to work with me or just want to get in touch, I'd love to hear from you!</p>
+                    <a href="tel:+84905925054" class="phone">+84 905 925 054</a>
+                </div>
+                
+                <div class="social-icon-div social-icons">
+                    <a href="https://www.instagram.com/fiqmansyah123/">
+                        <img src="instagram-icon.png" alt="Instagram">
+                    <a href="https://t.me/AxyenDutchie">
+                        <img src="telegram-icon.png" alt="Instagram">
+                    <a href="https://discordapp.com/users/865591175943684097">
+                        <img src="discord-icon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="col content-margin">
+                <div class="contact">
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <div class="input-row">
+                            <div class="half">
+                                <input type="text" name="phone" placeholder="Phone number">
+                            </div>
+                            <div class="half-right">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <textarea class="textarea-tall" name="message" placeholder="Message"></textarea>
+                        <button class="button" type="submit">SEND OFFER</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="col-full footer">
+            <br><br>
+            <hr>
+            <p>Copyright &copy;2024 Takanasha Taryu. All Rights Reserved | Designed by Mohammad Fiqri Firmansyah</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
