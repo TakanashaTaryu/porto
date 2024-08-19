@@ -1,4 +1,4 @@
-document.querySelector('.scroll-btn').addEventListener('click', function(e) {
+document.querySelector('.fading-btn').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
@@ -6,8 +6,8 @@ document.querySelector('.scroll-btn').addEventListener('click', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const heroSection = document.querySelector('.hero');
-    const heroText = document.querySelector('.hero h1');
+    const heroSection = document.querySelector('cover');
+    const heroText = document.querySelector('cover h1');
 
     function checkBackground() {
         const bgImage = getComputedStyle(heroSection).backgroundImage;
